@@ -1,47 +1,3 @@
-React Hooks are functions that let you use state and other React features in functional components. Here is a comprehensive overview of the most commonly used hooks, each with a separate example for clarity:
-
-1. useState
-The useState hook lets you add state to functional components.
-
-import React, { useState } from 'react';
-
-function Counter() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
-  );
-}
-
-export default Counter;
-
-2. useEffect
-The useEffect hook lets you perform side effects in functional components. It can be used for data fetching, subscriptions, or manually changing the DOM.
-
-Example
-import React, { useState, useEffect } from 'react';
-
-function DataFetcher() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('https://api.example.com/data')
-      .then(response => response.json())
-      .then(data => setData(data));
-  }, []); // Empty dependency array means this effect runs once on mount
-
-  return (
-    <div>
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
-    </div>
-  );
-}
-
-export default DataFetcher;
-
 
 
 React Hooks are functions that let you use state and other React features in functional components. Here is a comprehensive overview of the most commonly used hooks, each with a separate example for clarity:
@@ -51,7 +7,7 @@ The useState hook lets you add state to functional components.
 
 Example
 jsx
-Copy code
+
 import React, { useState } from 'react';
 
 function Counter() {
@@ -71,7 +27,7 @@ The useEffect hook lets you perform side effects in functional components. It ca
 
 Example
 jsx
-Copy code
+
 import React, { useState, useEffect } from 'react';
 
 function DataFetcher() {
