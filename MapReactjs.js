@@ -2,7 +2,7 @@
 import React from 'react';
 
 function App() {
-  const arr=["reactJs","ExpressJs","NodeJs","MOndodb","Javascript"]
+  const arr=["reactJs","ExpressJs","NodeJs","Mongodb","Javascript"]
   return (
     <div>
     {
