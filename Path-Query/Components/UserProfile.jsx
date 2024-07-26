@@ -21,3 +21,7 @@ const UserProfile = () => {
 };
 
 export default UserProfile;
+
+
+//path parameter link--- http://localhost:5173/UserProfile/100/jhon
+//Query parameter link-- http://localhost:5173/UserProfile/100/jhon?page=250&category=%22same%22
